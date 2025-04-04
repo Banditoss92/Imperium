@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imperium - Sojusz Ikariam</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to bottom, #001f3f, #003366);
+      color: #f5f5f5;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 2px solid gold;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: gold;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 3rem;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+    }
+    h2 {
+      color: gold;
+      margin-top: 0;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.6);
+      border-top: 2px solid gold;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Imperium</h1>
+    <p>Sojusz graczy oddanych sprawie! Budujemy imperium oparte na lojalności, strategii i honorze.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Forum Sojuszu</h2>
+      <!-- Disqus embed -->
+      <div id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
+          this.page.url = window.location.href;
+          this.page.identifier = 'imperium-sojusz';
+        };
+        (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://EXAMPLE.disqus.com/embed.js'; // <-- tutaj wstaw swój disqus shortname
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Włącz JavaScript, aby zobaczyć <a href="https://disqus.com/?ref_noscript">komentarze obsługiwane przez Disqus.</a></noscript>
+    </section>
+
+    <section>
+      <h2>Czat Sojuszu</h2>
+      <!-- Chatango embed -->
+      <iframe src="https://chatango.com/clonegroupbox?name=imperiumchat&style=simple" allowtransparency="true"></iframe>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Sojusz Imperium – Ikariam | Stworzone z pomocą AI 😎
+  </footer>
+</body>
+</html>
